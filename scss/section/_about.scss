@@ -1,0 +1,39 @@
+.container__about{
+    background: #fbfbfb;
+}
+.about__row {
+    max-width: 1030px;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 0 auto;
+    margin-top: 120px;
+    padding-top: 30px;
+    @include mediaTablet{
+        flex-wrap: wrap;
+    }
+    @include mediaMedium{
+
+    }
+}
+.about__row-img-col2{
+    @include mediaMedium{
+        order: 3;
+    }
+}
+.about__images-column {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+.about__text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 400px;
+}
+.about__text-description {
+    font-weight: 300;
+    line-height: 25px; 
+}

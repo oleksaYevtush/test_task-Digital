@@ -1,0 +1,81 @@
+.textfield {
+  color: #8d8d8d;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  &__label {
+    position: absolute;
+    top: 13px;
+    left: 21px;
+    display: block;
+    font-size: 14px;
+    line-height: 24px;
+    user-select: none;
+    cursor: text;
+    &::after {
+      position: relative;
+      top: -3px;
+      left: 1px;
+      display: inline-block;
+      content: "*";
+      color: #d0011b;
+    }
+  }
+  &__input {
+    display: block;
+    box-sizing: border-box;
+    height: 48px;
+    width: 100%;
+    padding: 13px 21px;
+    background: $placeholder;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    outline: none;
+    transition: all 0.25s linear;
+    &:disabled {
+      background: #f9fafb;
+    }
+      }
+  &__textarea {
+    padding: 13px 21px;
+    width: 100%;
+    height: 147px;
+    background: $placeholder;
+    resize: none;
+
+    display: block;
+    box-sizing: border-box;
+    outline: none;
+    transition: all 0.25s linear;
+    &::placeholder {
+      color: red;
+    }
+  }
+
+  &__input:focus + &__label,
+  &__input:valid + &__label,
+  &__input:disabled + &__label {
+    display: none;
+  }
+  
+  &__textarea:focus + &__label,
+  &__textarea:valid + &__label,
+  &__textarea:disabled + &__label {
+    display: none;
+  }
+}
+
+.form__input {
+  color: #8d8d8d;
+  width: 100%;
+  height: 46px;
+  background: $placeholder;
+  padding: 13px 21px;
+  &::placeholder {
+    color: #8d8d8d;
+  }
+}

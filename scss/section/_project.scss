@@ -1,0 +1,79 @@
+.our__projects-row {
+    display: flex;
+    flex-direction: column;
+}
+.our__projects-header {
+    margin-top: 80px;
+}
+.out__projects-images {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    @include mediaMedium {
+        gap: 15px;
+    }
+    @include mediaMobile {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .img-1 {
+        grid-area: 1 / 1 / 2 / 7;
+    }
+    .img-2 {
+        grid-area: 1 / 7 / 2 / 13;
+    }
+    .img-3 {
+        grid-area: 2 / 1 / 3 / 4;
+    }
+    .img-4 {
+        grid-area: 2 / 4 / 3 / 9;
+    }
+    .img-5 {
+        grid-area: 2 / 9 / 3 / 13;
+    }
+}
+.images__container {
+    display: inline-block;
+    max-width: 570px;
+     position: relative;
+}
+
+.header__text-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $accent-dark;
+    opacity: 0.8;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header__text {
+    width: 80%;
+}
+.project__img-title {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 64px;
+    color: $white;
+    @include mediaTablet {
+        font-size: 45px;
+        line-height: 45px;
+    }
+    @include mediaMedium {
+        font-size: 20px;
+        line-height: 20px;
+    }
+}
+.project_img-button {
+    margin-top: 30px;   
+    align-self: flex-end;
+}
+.button-details{
+    justify-content: start;
+}

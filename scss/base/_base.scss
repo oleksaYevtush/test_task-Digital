@@ -1,0 +1,53 @@
+body {
+    font-family: $font-main;
+    background-color: $white;
+    color: $black;
+    font-size: 16px;
+}
+
+a {
+    color: $accent-dark;
+    transition: color 0.2s ease-in;
+    &:hover {
+        color: $black;
+    }
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 12px;
+    max-width: 1194px;
+}
+.none {
+    display: none !important;
+}
+.button {
+    width: 222px;
+    height: 71px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-size: 12px;
+    letter-spacing: 2.4px;
+    color: $accent-dark;
+    background: $white;
+}
+.button-secondary {
+    color: $white;
+    background: $accent-dark;
+}
+.no-scroll {
+    overflow-y: hidden;
+}
+.title {
+    font-size: 64px;
+    font-weight: 300;
+    color: $gray;
+    @include mediaMobile {
+        font-size: 40px;
+    }
+}
+.arrow-right {
+    transform: rotate(180deg);
+}

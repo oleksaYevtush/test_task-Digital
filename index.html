@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Orange</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__top-row">
+                <a href="#">
+                    <img src="img/logo.svg" alt="">
+                </a>
+                <div class="header__nav">
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="active"><a href="#">ГЛАВНАЯ</a></li>
+                            <li><a href="#">ГАЛЕРЕЯ</a></li>
+                            <li><a href="#">ПРОЕКТЫ</a></li>
+                            <li><a href="#">СЕРТИФИКАТЫ</a></li>
+                            <li><a href="#">КОНТАКТЫ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__nav-btn">
+                    <button class="nav-icon-btn">
+                        <div class="nav-icon"></div>
+                    </button>
+                </div>
+            </div>
+            <div class="header__content">
+                <div class="header__content-slider">
+                    <h1 class="title slider__title">
+                        <span>PROJECT</span>
+                        <span class="accent">HOME</span>
+                    </h1>
+                    <div class="slider__buttons">
+                        <button class="slider-button">
+                            <img src="img/arrow.svg" alt="">
+                        </button>
+                        <button class="slider-button active">
+                            <div class="slider__line"></div>
+                            <img src="img/arrow.svg" class="arrow-right" alt="">
+                        </button>
+                    </div>
+                    <div class="slider__status">
+                        <p>01</p>
+                        <img src="img/header/slash.svg" alt="">
+                        <p>02</p>
+                    </div>
+                </div>
+                <div class="header__content-img">
+                    <img src="img/header/header-img.png" class="img" alt="">
+                    <button class="button">
+                        <p class="button_read">ВЗГЛЯНУТЬ</p>
+                        <img src="img/arrow.svg" class="arrow-right" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="about">
+            <div class="container container__about">
+                <div class="about__row">
+                    <div class="about__images-column">
+                        <img src="img/about/about-1.png" alt="">
+                        <img src="img/about/about-3.png" alt="">
+                    </div>
+                    <div class="about__row-img-col2">
+                        <img src="img/about/about-2.png" alt="">
+                    </div>
+                    <div class="about__text">
+                        <h2 class="title about__text-header">О компании</h2>
+                        <p class="about__text-description">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book. It has survived not only five
+                            centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        </p>
+                        <button class="button">
+                            <p class="button_read">ЧИТАТЬ</p>
+                            <img src="img/arrow.svg" class="arrow-right" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main__tasks">
+            <div class="container">
+                <div class="main__tasks-row">
+                    <h2 class="title main__tasks-header">Основные задачи</h2>
+                    <div class="main__tasks-text">
+                        <div class="main__task-element">
+                            <p class="task__num">1</p>
+                            <p class="task__description element-primary">Создание комфортных условий и повышение
+                                качества обслуживания клиентов</p>
+                        </div>
+                        <div class="main__task-element">
+                            <p class="task__num">2</p>
+                            <p class="task__description">Постоянно совершенствовать качество предоставляемых услуг
+                                путем обучения персонала, закупки нового оборудования и усиленной рекламы на
+                                рынке</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="our__projects">
+            <div class="container">
+                <div class="our__projects-row">
+                    <h2 class="title our__projects-header">Наши проекты</h2>
+                    <div class="out__projects-images">
+                        <div class="images__container img-1">
+                            <img src="img/projects/img-5.png" class="our__projects-img" alt="">
+                            <div class="header__text-container">
+                                <div class="header__text">
+                                    <h3 class="project__img-title">ДОСУГОВЫЙ ЦЕНТР</h3>
+                                    <button class="button button-secondary button-details">
+                                        <p>ПОДРОБНЕЕ</p>
+                                        <img src="img/arrow-right.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="img/projects/img-1.png" class="our__projects-img img-2" alt="">
+                        <img src="img/projects/img-2.png" class="our__projects-img img-3" alt="">
+                        <img src="img/projects/img-3.png" class="our__projects-img img-4" alt="">
+                        <img src="img/projects/img-4.png" class="our__projects-img img-5" alt="">
+                    </div>
+                    <button class="button project_img-button button-secondary">
+                        <p class="button_project">ВСЕ ПРОЕКТЫ</p>
+                        <img src="img/arrow-right.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="feedback">
+            <div class="container">
+                <div class="feedback__container">
+                    <h2 class="title">Связаться с нами</h2>
+                    <div class="feedback-row">
+                        <form action="" class="feedback__form">
+                            <div class="form__inputs">
+                                <input type="text" placeholder="Имя" class="form__input">
+                                <fieldset class="textfield textfield--light">
+                                    <input class="textfield__input" required>
+                                    <label class="textfield__label textfield__label--required">Номер
+                                        телефона</label>
+                                </fieldset>
+                                <fieldset class="textfield textfield--light">
+                                    <input class="textfield__input" required>
+                                    <label class="textfield__label textfield__label--required">E-mail</label>
+                                </fieldset>
+                                <input type="text" placeholder="Интересующий товар/услуга" class="form__input">
+
+                                <fieldset class="textfield textfield--light">
+                                    <textarea class="textfield__textarea" required></textarea>
+                                    <label class="textfield__label textfield__label--required">Сообщение</label>
+                                </fieldset>
+                            </div>
+                            <div class="form__info">
+                                <input type="checkbox" id="privacyPolicy" class="form__info-checkbox">
+                                <label for="privacyPolicy" class="form__info-label">
+                                    <img src="img/feedback/check.svg" alt="" class="form__info-img">
+                                    <span>Отправляя заявку Вы соглашаетесь с политикой
+                                        конфиденциальности</span>
+                                </label>
+                            </div>
+                            <button class="button button-secondary">
+                                <p class="button_project">ОТПРАВИТЬ</p>
+                                <img src="img/arrow-right.svg" alt="">
+                            </button>
+                        </form>
+                        <img src="img/feedback/feedback-img.png" class="feedback__img" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <a href="#"><img src="img/footer/footer-logo.svg" alt="" class="footer__logo"></a>
+                <div class="footer__nav">
+                    <h4 class="footer__header">Информация</h4>
+                    <nav>
+                        <ul class="footer__nav-list">
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">Галерея</a></li>
+                            <li><a href="#">Проекты</a></li>
+                            <li><a href="#">Сертификаты</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__contacts">
+                    <h4 class="footer__header">Контакты</h4>
+                    <ul class="footer__contacts-list">
+                        <li>
+                            <img src="img/footer/map-pin.svg" alt="">
+                            <p>100000, Республика Казахстан, <br> г. Караганда, ул. Телевизионная 10</p>
+                        </li>
+                        <li>
+                            <img src="img/footer/call.svg" alt="">
+                            <p>+38 (000) 000 00 00</p>
+                        </li>
+                        <li>
+                            <img src="img/footer/mail.svg" alt="">
+                            <p>mail@gmail.com</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__social">
+                    <h4 class="footer__header">Социальные сети</h4>
+                    <div class="footer__social-icons">
+                        <a href="#"><img src="img/footer/social/facebook.svg" alt=""></a>
+                        <a href="#"><img src="img/footer/social/twitter.svg" alt=""></a>
+                        <a href="#"><img src="img/footer/social/linked-in.svg" alt=""></a>
+                        <a href="#"><img src="img/footer/social/pininterest.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <p>© 2019 Digital Project. Все права защищены.</p>
+        </div>
+    </footer>
+    <script src="js/mobile.js"></script>
+</body>
+</html>

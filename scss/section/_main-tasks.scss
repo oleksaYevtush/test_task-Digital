@@ -1,0 +1,39 @@
+.main__tasks-row{
+    margin-top: 150px;
+    @include mediaMobile{
+        margin-top: 40px;
+    }
+}
+.main__tasks-text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @include mediaTablet {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+}
+.main__task-element {
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+    gap: 25px;
+    @include mediaMobile {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+}
+.task__num {
+    font-size: 200px;
+    font-family: SF Pro Display;
+    font-weight: 900;
+    color: #f2f2f2;
+}
+.task__description {
+    font-size: 22px;
+    line-height: 36px;
+    color: $accent-dark;
+    &.element-primary {
+        width: 280px;
+    }
+}
